@@ -1,0 +1,167 @@
+@import 'media-queries';
+@import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
+
+$bg: RGB(245,244,240);
+
+body {
+  font-family: 'Karla', sans-serif;
+  background-color: $bg;
+}
+
+
+
+.main-articles{
+  padding: 3rem 0;
+  article{
+    display: flex;
+    align-items: center;
+    text-align: justify;
+
+    h1{
+      font-size: 3.5rem;
+      line-height: 4rem;
+      margin: 0;
+      margin-bottom: 1rem;
+    }
+
+    p{
+      font-size: 1.1rem;
+      line-height: 1.8rem;
+    }
+
+    .article-details{
+      padding: 3rem;
+
+      flex-basis: 50%;
+    }
+
+    figure{
+
+      flex-basis: 50%;
+      max-width: 50%;
+      padding: 5rem;
+      margin: 0;
+      width: 5px;
+      
+    }
+
+    &:nth-child(even){
+      flex-direction: row-reverse;
+    }
+  }
+}
+
+.section-end{
+  background-color: RGB(155,204,187);
+  text-align: center;
+  padding: 5rem;
+
+  #button{
+    background-color:transparent;
+    color: black;
+    border: 0.5px solid black;
+    float: right;
+    border-radius: 5%;
+    padding: 10px;
+  }
+
+  .max{
+
+      text-align: center;
+
+    
+  }
+
+  #name,#email,#technology, #message {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 0 0 0 1px;
+    background: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-block-end-color: black;
+  
+
+  }
+  
+  h1{
+    font-weight: bold;
+    font-size: 1.2rem;
+
+  }
+
+  h2{
+    font-weight: lighter;
+    font-size: 0.8rem;
+  }
+}
+
+.main-container{
+  padding: 5rem;
+}
+
+
+.main-footer{
+  color: black;
+  text-align: center;
+  padding: 3rem 0;
+  font-size: .8rem;
+}
+
+.header-container{
+  text-align: center;
+  h1{
+    font-size: 2.5rem;
+  }
+  h2{
+    font-size: 3.5rem;
+  }
+
+}
+.hidden {
+  display: none;
+}
+
+.modal-dialog{
+  position: fixed;
+  border: 1px solid black;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 1px rgba(0,0,0,.4);
+  padding: 20px;
+  
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.hidden {
+  display: none;
+}
+
+.modal-dialog{
+  position: fixed;
+  border: 1px solid black;
+  box-shadow: 0 0 10px 1px rgba(0,0,0,.4);
+  padding: 20px;
+  background: white;
+  h1{
+    font-size: 18px;
+    font-weight: bold;
+  }
+  h2{
+    font-size: 15px;
+    font-weight: lighter;
+  }
+  #close-modal{
+    background-color:transparent;
+    color: black;
+    border: 0.5px solid black;
+    float: right;
+    border-radius: 5%;
+    padding: 10px;
+    
+  }
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}

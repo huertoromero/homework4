@@ -1,0 +1,31 @@
+@media screen and (max-width: 780px) {
+  body {
+    
+  .section-end{
+    h1{
+      font-size: 4rem;
+      line-height: 5rem;
+    }
+
+    h2{
+      font-size: 3rem;
+      line-height: 3.1rem;
+    }
+  }
+  .main-articles{
+    article{
+      flex-direction: column-reverse;
+      align-items: center;
+
+      figure{
+        flex-basis: 100%;
+        max-width: 100%;
+      }
+
+      &:nth-child(even){
+        flex-direction: column-reverse;
+      }
+    }
+  }
+}
+  }
